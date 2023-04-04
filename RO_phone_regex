@@ -1,0 +1,2 @@
+select regexp_matches(colunm_name , '^\+?4\s?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$')
+from file_name;
