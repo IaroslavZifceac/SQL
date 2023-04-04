@@ -1,0 +1,6 @@
+select postal  as give_name, count(*)
+from file_name
+where (case when regexp_match(postal,'\d{6}') notnull then 1 else 0 end)=0
+group by column_name  
+having  count(distinct  column_name) = 1
+;
