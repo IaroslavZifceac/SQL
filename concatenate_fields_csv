@@ -1,0 +1,3 @@
+SELECT shapeid, partid, x, y, "begin", "end", den, layer, "path", vertex_ind, vertex_par, vertex_p_1, vertex_p_2, distance, angle
+FROM "file_name";
+SELECT  COALESCE (y ,'')||','||COALESCE (x, '') AS ab FROM "file_name";
